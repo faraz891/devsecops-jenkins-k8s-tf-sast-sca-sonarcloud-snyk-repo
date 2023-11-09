@@ -307,7 +307,7 @@
 -->
 <!-- Example Plugin Configuration -->
 
-  <plugins>
+  
     <plugin>
       <groupId>io.snyk</groupId>
       <artifactId>snyk-maven-plugin</artifactId>
@@ -335,7 +335,7 @@
 	<org>faraz891</org>      
       </configuration>
     </plugin>
-  </plugins>
+  
 
 <!-- Snyk Changes for SCA Ends Here -->
 		</plugins>
