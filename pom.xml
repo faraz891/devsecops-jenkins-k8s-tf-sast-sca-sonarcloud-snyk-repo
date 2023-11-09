@@ -305,15 +305,38 @@
 			<!--# Changes for Software Composition Analysis Scan using Snyk
 #By ASecurityGuru
 -->
+<!-- Example Plugin Configuration -->
+<build>
+  <plugins>
     <plugin>
       <groupId>io.snyk</groupId>
       <artifactId>snyk-maven-plugin</artifactId>
       <version>2.0.0</version>
       <inherited>false</inherited>
+      <executions>
+        <execution>
+          <id>snyk-test</id>
+          <goals>
+            <goal>test</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>snyk-monitor</id>
+          <goals>
+            <goal>monitor</goal>
+          </goals>
+        </execution>
+      </executions>
       <configuration>
-        <org>faraz891</org>
+        <apiToken>${env.SNYK_TOKEN}</apiToken>
+        <args>
+          <arg>--all-projects</arg>
+        </args>
+	<org>faraz891</org>      
       </configuration>
     </plugin>
+  </plugins>
+</build>
 <!-- Snyk Changes for SCA Ends Here -->
 		</plugins>
 		<pluginManagement>
