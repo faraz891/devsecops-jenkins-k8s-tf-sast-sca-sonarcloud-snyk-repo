@@ -306,7 +306,7 @@
 #By ASecurityGuru
 -->
 <!-- Example Plugin Configuration -->
-<build>
+
   <plugins>
     <plugin>
       <groupId>io.snyk</groupId>
@@ -336,7 +336,7 @@
       </configuration>
     </plugin>
   </plugins>
-</build>
+
 <!-- Snyk Changes for SCA Ends Here -->
 		</plugins>
 		<pluginManagement>
