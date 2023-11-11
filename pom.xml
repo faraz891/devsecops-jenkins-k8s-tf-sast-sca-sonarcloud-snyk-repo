@@ -56,7 +56,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -199,13 +199,10 @@
 						</goals>
 						<configuration>
 							<tasks>
-								<mkdir dir="logs" />
-								<copy file="${basedir}/src/main/resources/messages_en.properties"
-									tofile="${project.build.outputDirectory}/messages.properties" />
-								<copy file="${basedir}/src/main/resources/indexpage_en.properties"
-									tofile="${project.build.outputDirectory}/indexpage.properties" />
-								<delete
-									file="${project.build.outputDirectory}/org/t246osslab/easybuggy/core/utils/DeleteClassWhileMavenBuild.class" />
+								<mkdir dir="logs"/>
+								<copy file="${basedir}/src/main/resources/messages_en.properties" tofile="${project.build.outputDirectory}/messages.properties"/>
+								<copy file="${basedir}/src/main/resources/indexpage_en.properties" tofile="${project.build.outputDirectory}/indexpage.properties"/>
+								<delete file="${project.build.outputDirectory}/org/t246osslab/easybuggy/core/utils/DeleteClassWhileMavenBuild.class"/>
 							</tasks>
 						</configuration>
 					</execution>
