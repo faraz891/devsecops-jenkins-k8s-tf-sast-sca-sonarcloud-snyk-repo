@@ -39,6 +39,7 @@
 				<jdk>11</jdk>
 			</activation>
 			<properties>
+				<sonar.javascript.detectBundles>false</sonar.javascript.detectBundles>
 				<jvm.args.perm.size>-XX:MaxMetaspaceSize=128m</jvm.args.perm.size>
 				<jvm.args.gc.log.path>-Xlog:gc*:logs/gc_%p_%t.log:time,level,tags:filecount=5,filesize=10M</jvm.args.gc.log.path>
 				<!-- TODO Remove these properties -->
